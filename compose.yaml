@@ -1,0 +1,9 @@
+services:
+  overpass:
+    build:
+      context: .
+    ports:
+      - 8080:80
+    volumes:
+      - ${PWD}/aero.osm:/aero.osm
+      # - ${PWD}/osm-3s_v0.7.62.5:/osm-3s_v0.7.62.5
