@@ -15,6 +15,7 @@
   COPY osm-3s_latest.tar.gz /osm-3s_latest.tar.gz
   COPY scripts /scripts
   COPY aero.osm /data.osm
+  COPY configs/000-default.conf /etc/apache2/sites-available/000-default.conf
 
   RUN chmod +x /scripts/*.sh
   # RUN /scripts/configure.sh
